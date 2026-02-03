@@ -1,0 +1,20 @@
+export default function LayoutIcon({
+  size = 24,
+  color = "#fd6c2e",
+  className = "",
+  ...props
+}) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill={color}
+      className={className}
+      {...props}
+    >
+      <path d="M22,21V3a1,1,0,0,0-1-1H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21A1,1,0,0,0,22,21ZM11,20H4V13h7Zm9,0H13V13h7Zm0-9H4V4H20Z" />
+    </svg>
+  );
+}
