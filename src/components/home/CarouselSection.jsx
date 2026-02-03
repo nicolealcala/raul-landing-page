@@ -1,10 +1,10 @@
 import { carouselItems } from "../../lib/data/carousel-items";
-import CarouselCard from "../shared/CarouselCard";
+import EmblaCarousel from "../ui/EmblaCarousel";
 
-export default function Carousel() {
+export default function CarouselSection() {
   return (
-    <>
-      <div className="flex justify-between">
+    <article className="flex flex-col gap-y-20">
+      <section className="flex justify-between w-full max-w-7xl mx-auto">
         <h2 className="text-6xl font-semibold">
           Build the future of your business today.
         </h2>
@@ -13,15 +13,11 @@ export default function Carousel() {
           solutions. As a full-service agency, we specialize in helping
           companies of all sizes optimize their operations.
         </p>
-      </div>
+      </section>
 
-      {carouselItems.map((item) => (
-        <CarouselCard
-          key={item.title.replaceAll(" ", "-")}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </>
+      <section className="w-full pl-[calc((100vw-1280px)/2)]">
+        <EmblaCarousel slides={carouselItems} />
+      </section>
+    </article>
   );
 }
