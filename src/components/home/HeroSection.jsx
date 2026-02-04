@@ -11,7 +11,7 @@ export default function HeroSection() {
     <article className="relative flex gap-x-8 w-full max-w-7xl mx-auto">
       <div className="w-full flex flex-col gap-y-8 lg:gap-y-20 z-10">
         <header>
-          <h1 className="text-[clamp(2.75rem,7.5vw,5.25rem)] font-semibold leading-[1.1] tracking-tighter text-center lg:text-left">
+          <h1 className="text-[clamp(2.75rem,7.75vw,5.25rem)] font-semibold leading-[1.1] tracking-tighter text-center lg:text-left">
             <span className="text-primary-400">Future of your</span>
             <br />
             <span>business today.</span>
@@ -22,12 +22,13 @@ export default function HeroSection() {
           {/* Subheading and metrics */}
           <div className="flex flex-col gap-y-16 w-full self-start">
             <div className="flex flex-col lg:flex-row justify-center items-center gap-12 md:gap-x-14">
-              <div className="hidden lg:flex size-16 md:size-36 bg-neutral-400/75 rounded-xl shrink-0"></div>
+              <div className="hidden lg:flex size-16 lg:size-36 bg-neutral-400/75 rounded-xl shrink-0"></div>
               <p className="pt-0 text-center w-full max-w-sm lg:text-left lg:pt-4 lg:max-w-70">
                 Where we elevate your business with inovative strategies and
                 expert solutions. As a full-service business agency
               </p>
 
+              {/* Tablet mode only*/}
               <div className="hidden md:flex lg:hidden w-full justify-between max-w-lg">
                 <Metrics
                   amount={2000}
