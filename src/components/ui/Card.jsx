@@ -11,7 +11,7 @@ export default function Card({ header, title, description, className }) {
       )}
     >
       {header}
-      <h3 className="text-xl font-bold">{title}</h3>
+      <h2 className="text-xl font-bold">{title}</h2>
       <p className="text-sm">{description}</p>
     </div>
   );
