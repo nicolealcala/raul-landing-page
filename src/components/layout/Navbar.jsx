@@ -64,14 +64,18 @@ export default function Navbar() {
               <hr className="text-gray-300" />
               <div className="flex flex-col gap-y-1 p-2 shadow-md">
                 {navLinks.map((page) => (
-                  <a
+                  <NavLink
                     key={page.path}
-                    href={page.path}
-                    role="button"
-                    className="font-semibold px-4 py-2 rounded-md"
+                    to={page.path}
+                    className={({ isActive }) =>
+                      cn(
+                        "font-semibold transition-colors px-4 py-2 rounded-md",
+                        isActive ? "text-primary-400" : "text-inherit",
+                      )
+                    }
                   >
                     {page.label}
-                  </a>
+                  </NavLink>
                 ))}
               </div>
             </div>
