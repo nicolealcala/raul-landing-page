@@ -2,15 +2,26 @@ import { buttonVariants } from "../../lib/config/components";
 import { cn } from "../../lib/utils";
 
 export default function Button({
+  component,
+  link,
   disabled = false,
   variant = "filled",
   children,
+  className,
   ...props
 }) {
-  return (
+  return component && component === "a" ? (
+    <a
+      role="button"
+      href={link ?? "#"}
+      className={cn("button-base", buttonVariants[variant], className ?? "")}
+    >
+      {children}
+    </a>
+  ) : (
     <button
       className={cn(
-        "px-6 py-2.5 rounded-md transition-all duration-200 ease-in-out font-semibold",
+        "button-base",
         buttonVariants[variant] ?? "",
         disabled ? "cursor-auto" : "cursor-pointer",
       )}
