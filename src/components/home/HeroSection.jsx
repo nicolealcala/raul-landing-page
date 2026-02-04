@@ -23,7 +23,7 @@ export default function HeroSection() {
           <div className="flex flex-col gap-y-16 w-full self-start">
             <div className="flex flex-col lg:flex-row justify-center items-center gap-12 md:gap-x-14">
               <div className="hidden lg:flex size-16 lg:size-36 bg-neutral-400/75 rounded-xl shrink-0"></div>
-              <p className="pt-0 text-center w-full max-w-sm lg:text-left lg:pt-4 lg:max-w-70">
+              <p className="pt-0 text-center w-full max-w-sm lg:text-left lg:pt-4 lg:max-w-70 px-2">
                 Where we elevate your business with inovative strategies and
                 expert solutions. As a full-service business agency
               </p>
