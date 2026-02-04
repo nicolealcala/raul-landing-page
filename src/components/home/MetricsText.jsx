@@ -1,11 +1,15 @@
 import { cn } from "../../lib/utils";
+import CountUp from "react-countup";
 
 export default function MetricsText({ amount, className }) {
   return (
-    <span
+    <CountUp
       className={cn("text-primary-400 font-semibold text-4xl", className ?? "")}
-    >
-      {amount}+
-    </span>
+      end={amount}
+      duration={1}
+      enableScrollSpy
+      scrollSpyOnce
+      suffix="+"
+    />
   );
 }
