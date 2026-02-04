@@ -48,11 +48,19 @@ export default function Navbar() {
         <div className="flex justify-between">
           <Logo />
           {isSmallNavToggled ? (
-            <IconButton className="size-10" onClick={handleCloseSmallNav}>
+            <IconButton
+              aria-label="Close menu"
+              className="size-10"
+              onClick={handleCloseSmallNav}
+            >
               <Close />
             </IconButton>
           ) : (
-            <IconButton className="size-10" onClick={handleOpenSmallNav}>
+            <IconButton
+              aria-label="Open menu"
+              className="size-10"
+              onClick={handleOpenSmallNav}
+            >
               <Menu />
             </IconButton>
           )}
