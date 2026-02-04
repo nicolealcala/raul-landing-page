@@ -36,37 +36,15 @@
 
 #root {
   padding: 0 !important;
+  margin: 0 !important;
+  margin-inline: auto !important;
+  max-width: 100% !important;
 }
 
 body {
   margin: 0;
-  @apply bg-primary-50;
+  @apply bg-primary-50/75;
 }
-
-/* 
-h1 {
-  @apply text-7xl leading-20;
-}
-
-h2 {
-  @apply text-6xl;
-}
-
-h3 {
-  @apply text-5xl;
-}
-
-h4 {
-  @apply text-4xl;
-}
-
-h5 {
-  @apply text-3xl;
-}
-
-h6 {
-  @apply text-2xl;
-} */
 
 p {
   @apply opacity-75;
@@ -79,7 +57,7 @@ p {
 
   a,
   a[role="button"]:not([aria-disabled="true"]) {
-    @apply cursor-pointer hover:text-primary-500 transition-colors duration-200 ease-in-out;
+    @apply cursor-pointer hover:text-primary-500 transition-all duration-200 ease-in-out;
   }
 }
 
