@@ -24,6 +24,7 @@ export default function EmblaCarousel({ slides }) {
     setCanScrollNext(embla.canScrollNext());
   }, []);
 
+  //Hook to to listen to carousel select events for showing/hiding control buttons
   useEffect(() => {
     if (!emblaApi) return;
 
