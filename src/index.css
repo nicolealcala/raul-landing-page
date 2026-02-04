@@ -59,6 +59,10 @@ p {
   a[role="button"]:not([aria-disabled="true"]) {
     @apply cursor-pointer hover:text-primary-500 transition-all duration-200 ease-in-out;
   }
+
+  .button-base {
+    @apply w-fit px-5 md:px-6 py-2.5 rounded-md transition-all duration-200 ease-in-out font-semibold;
+  }
 }
 
 /* a {
