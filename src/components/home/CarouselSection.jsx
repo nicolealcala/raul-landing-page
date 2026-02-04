@@ -5,7 +5,7 @@ export default function CarouselSection() {
   return (
     <article className="flex flex-col gap-y-20">
       <section className="flex flex-col gap-6 lg:flex-row justify-between w-full max-w-7xl mx-auto">
-        <h2 className="text-[clamp(2rem,5vw,3.75rem)] font-semibold leading-[1.1] tracking-tighter text-center lg:text-left">
+        <h2 className="text-[clamp(2.3rem,5vw,3.75rem)] font-semibold leading-[1.1] tracking-tighter text-center lg:text-left">
           Build the future of your business today.
         </h2>
         <p className="max-w-lg mt-4 mx-auto text-center lg:max-w-sm lg:text-left">
