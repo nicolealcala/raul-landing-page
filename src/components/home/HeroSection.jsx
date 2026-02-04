@@ -4,6 +4,7 @@ import Button from "../ui/Button";
 import Card from "../ui/Card";
 import Metrics from "./Metrics";
 import MetricsText from "./MetricsText";
+import HeroImgWebp from "/hero-img.webp";
 
 export default function HeroSection() {
   return (
@@ -54,9 +55,11 @@ export default function HeroSection() {
             <div className="w-full flex lg:hidden flex-col">
               <div className="w-full rounded-2xl h-[50vh] overflow-hidden -z-10">
                 <img
-                  src="https://images.pexels.com/photos/7691725/pexels-photo-7691725.jpeg"
+                  src={HeroImgWebp}
                   alt="Photo by Yan Krukau: https://www.pexels.com/photo/four-people-working-in-the-office-7691725/"
                   className="w-full h-full object-cover"
+                  fetchPriority="high"
+                  loading="eager"
                 />
               </div>
               <div className="flex lg:hidden -mt-20">
@@ -110,9 +113,11 @@ export default function HeroSection() {
       {/* Large Screen Header Image */}
       <div className="hidden lg:flex absolute right-0 top-0 bottom-0 w-[40%] h-[90%] rounded-2xl overflow-hidden z-0">
         <img
-          src="https://images.pexels.com/photos/7691725/pexels-photo-7691725.jpeg"
+          src={HeroImgWebp}
           alt="Photo by Yan Krukau: https://www.pexels.com/photo/four-people-working-in-the-office-7691725/"
           className="w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
         />
       </div>
     </article>
