@@ -1,4 +1,4 @@
-export default function LayoutIcon({
+export default function Layout({
   size = 24,
   color = "#fd6c2e",
   className = "",
