@@ -6,7 +6,7 @@ import MetricsText from "./MetricsText";
 
 export default function HeroSection() {
   return (
-    <article className="relative flex gap-x-8 mt-24 w-full max-w-7xl mx-auto">
+    <article className="relative flex gap-x-8 w-full max-w-7xl mx-auto">
       <div className="flex flex-col gap-y-20 z-10">
         <h1 className="font-semibold text-[84px] leading-22">
           <span className="text-primary-400">Future of your</span>
@@ -14,13 +14,13 @@ export default function HeroSection() {
           <span>business today.</span>
         </h1>
 
-        <section className="flex w-[75%] gap-x-8 text-left">
+        <section className="flex w-[75%] gap-x-16 text-left">
           <div className="flex flex-col gap-y-16">
-            <div className="flex gap-x-12">
+            <div className="flex gap-x-14">
               <div className="size-36 bg-primary-100 rounded-xl shrink-0"></div>
-              <p className="pt-4">
+              <p className="pt-4 w-70">
                 Where we elevate your business with inovative strategies and
-                expert solutions. As a full-service business agency.
+                expert solutions. As a full-service business agency
               </p>
             </div>
 

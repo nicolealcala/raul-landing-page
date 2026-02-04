@@ -9,7 +9,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        "px-3 py-2 rounded-md transition-all duration-200 ease-in-out",
+        "px-6 py-2.5 rounded-md transition-all duration-200 ease-in-out font-semibold",
         buttonVariants[variant] ?? "",
         disabled ? "cursor-auto" : "cursor-pointer",
       )}
