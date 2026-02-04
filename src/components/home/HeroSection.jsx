@@ -35,13 +35,11 @@ export default function HeroSection() {
                   icon={<LayoutIcon className="size-full" />}
                   description="Your protection"
                 />
-                <hr className="flex md:hidden h-1 w-1/2 bg-primary-400 border-t-primary-400" />
                 <Metrics
                   amount={7001}
                   icon={<ThreeDots className="size-full" />}
                   description="Provide tailored"
                 />
-                <hr className="flex md:hidden h-1 w-1/2 bg-primary-400 border-t-primary-400" />
               </div>
               <Button
                 component="a"
@@ -85,13 +83,11 @@ export default function HeroSection() {
                 icon={<LayoutIcon className="size-full" />}
                 description="Your protection"
               />
-              <hr className="flex md:hidden h-1 w-1/2 bg-primary-400 border-t-primary-400" />
               <Metrics
                 amount={7001}
                 icon={<ThreeDots className="size-full" />}
                 description="Provide tailored"
               />
-              <hr className="flex md:hidden h-1 w-1/2 bg-primary-400 border-t-primary-400" />
             </div>
           </div>
           {/* Hero Card */}
