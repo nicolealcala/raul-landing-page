@@ -1,11 +1,11 @@
-import HeroSection from "../components/home/Hero";
-import Carousel from "../components/home/Carousel";
+import HeroSection from "../components/home/HeroSection";
+import CarouselSection from "../components/home/CarouselSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-y-24">
+    <div className="flex flex-col gap-y-26">
       <HeroSection />
-      <Carousel />
+      <CarouselSection />
     </div>
   );
 }
