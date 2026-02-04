@@ -5,7 +5,7 @@ export default function Metrics({ amount, icon, description }) {
     <div className="flex gap-x-6 min-w-auto md:min-w-45">
       <div
         aria-hidden={true}
-        className="hidden md:flex size-16 rounded-lg bg-white flex-center p-3.5 shadow-[10px_10px_12px_rgba(0,0,0,0.08)]"
+        className="flex size-16 rounded-lg bg-white flex-center p-3.5 shadow-[10px_10px_12px_rgba(0,0,0,0.08)]"
       >
         {icon}
       </div>

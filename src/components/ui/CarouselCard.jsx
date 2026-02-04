@@ -10,6 +10,7 @@ export default function CarouselCard({ title, description }) {
       )}
     >
       <a
+        aria-label="Redirect Icon"
         role="button"
         href="#"
         className="max-w-fit bg-primary-100/90 p-2 rounded-md"
