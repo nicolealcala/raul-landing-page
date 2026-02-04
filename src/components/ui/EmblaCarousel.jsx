@@ -9,7 +9,11 @@ import { useCallback, useEffect, useState } from "react";
 export default function EmblaCarousel({ slides }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
-    align: "start",
+    align: "center",
+    containScroll: "trimSnaps",
+    breakpoints: {
+      "(min-width: 768px)": { align: "start" },
+    },
   });
 
   const [canScrollPrev, setCanScrollPrev] = useState(false);
@@ -28,34 +32,31 @@ export default function EmblaCarousel({ slides }) {
   }, [emblaApi, onSelect]);
 
   const goToPrev = useCallback(() => {
-    if (!emblaApi) {
-      console.error("No emba instance in prev btn");
-      return;
-    }
+    if (!emblaApi) return;
+
     emblaApi.scrollPrev();
   }, [emblaApi]);
 
   const goToNext = useCallback(() => {
-    if (!emblaApi) {
-      console.error("No emba instance in next btn");
-      return;
-    }
+    if (!emblaApi) return;
+
     emblaApi.scrollNext();
   }, [emblaApi]);
 
   return (
     <div
-      className={cn("mask-l-from-95% mask-r-from-90% -my-10 py-10 -ml-7 pl-7")}
+      className={cn(
+        "mask-l-from-95% mask-none sm:mask-r-from-90% -my-10 py-10 -ml-7 pl-7",
+      )}
     >
       <div className={cn("embla", "relative flex w-full flex-col gap-y-16")}>
         <div
           className={cn(
             "embla__viewport",
             "overflow-hidden",
-            "w-full",
             "-my-7 py-7",
             "-ml-7 pl-7",
-            "mr-[calc((100vw-1280px)/2+2.5rem)]",
+            "-mr-3 lg:mr-7",
           )}
           ref={emblaRef}
         >
@@ -63,12 +64,19 @@ export default function EmblaCarousel({ slides }) {
             className={cn(
               "embla__container",
               "flex touch-pan-y touch-pinch-zoom",
+              "w-full",
+              // "-my-7 py-7",
+              // "-ml-7 pl-7",
+              "-mr-6 lg:mr-[calc((100vw-1280px)/2+2.5rem)]",
             )}
           >
             {slides.map((slide) => (
               <div
                 key={slide.title.replaceAll(" ", "-")}
-                className={cn("embla__slide", "flex-[0_0_auto] pr-4")}
+                className={cn(
+                  "embla__slide",
+                  "flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_30%] xl:flex-[0_0_25%] pr-4",
+                )}
               >
                 <CarouselCard
                   title={slide.title}
@@ -79,14 +87,14 @@ export default function EmblaCarousel({ slides }) {
           </div>
         </div>
 
-        <div className="absolute top-1/2 -translate-y-1/2 w-full pr-[calc((100vw-1280px)/2)] flex justify-between">
+        <div className="absolute top-1/2 -translate-y-1/2 mt-6 sm:mt-0 w-full pr-[calc((100vw-1280px)/2)] flex justify-between">
           {canScrollPrev ? (
             <IconButton
               aria-label="Go to previous slide"
               className="embla__prev"
               onClick={goToPrev}
             >
-              <ArrowLeft className="size-24" />
+              <ArrowLeft className="size-8 lg:size-20" />
             </IconButton>
           ) : (
             <div></div>
@@ -94,10 +102,10 @@ export default function EmblaCarousel({ slides }) {
           {canScrollNext ? (
             <IconButton
               aria-label="Go to previous slide"
-              className="embla__prev"
+              className="embla__next"
               onClick={goToNext}
             >
-              <ArrowRight className="size-24" />
+              <ArrowRight className="size-8 lg:size-20" />
             </IconButton>
           ) : (
             <div></div>
