@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { navLinks } from "../../lib/data/nav-links";
 import Menu from "../icons/Menu";
-import Button from "../ui/Button";
 import IconButton from "../ui/IconButton";
 import Logo from "./Logo";
 import { Close } from "../icons/Close";
+import { buttonVariants } from "../../lib/config/components";
+import { cn } from "../../lib/utils";
 
 export default function Navbar() {
   const [isSmallNavToggled, setIsSmallNavToggled] = useState(false);
@@ -27,7 +28,16 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <Button>GET STARTED</Button>
+        <a
+          role="button"
+          href="#"
+          className={cn(
+            "px-6 py-2.5 rounded-md transition-all duration-200 ease-in-out font-semibold",
+            buttonVariants["filled"],
+          )}
+        >
+          GET STARTED
+        </a>
       </div>
 
       {/* Small Screen Nav */}
@@ -47,7 +57,7 @@ export default function Navbar() {
 
         <div className="relative w-full z-99">
           {isSmallNavToggled && (
-            <div className="absolute top-0 left-0 w-full bg-primary-50 rounded-b-xl">
+            <div className="absolute top-0 left-0 w-full bg-primary-50">
               <hr className="text-gray-300" />
               <div className="flex flex-col gap-y-1 p-2 shadow-md">
                 {navLinks.map((page) => (
