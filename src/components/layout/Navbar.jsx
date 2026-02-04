@@ -4,8 +4,9 @@ import Menu from "../icons/Menu";
 import IconButton from "../ui/IconButton";
 import Logo from "./Logo";
 import { Close } from "../icons/Close";
-import { buttonVariants } from "../../lib/config/components";
+import Button from "../ui/Button";
 import { cn } from "../../lib/utils";
+import { NavLink } from "react-router";
 
 export default function Navbar() {
   const [isSmallNavToggled, setIsSmallNavToggled] = useState(false);
@@ -21,23 +22,25 @@ export default function Navbar() {
     <nav className="w-full max-w-7xl mx-auto">
       <div className="hidden lg:flex justify-between items-center">
         <Logo />
-        <div className="flex justify-between w-full max-w-lg">
+        <div className="flex gap-x-12">
           {navLinks.map((page) => (
-            <a key={page.path} href={page.link} className="font-semibold">
+            <NavLink
+              key={page.path}
+              to={page.path}
+              className={({ isActive }) =>
+                cn(
+                  "font-semibold transition-colors px-2",
+                  isActive ? "text-primary-400" : "text-inherit",
+                )
+              }
+            >
               {page.label}
-            </a>
+            </NavLink>
           ))}
         </div>
-        <a
-          role="button"
-          href="#"
-          className={cn(
-            "px-6 py-2.5 rounded-md transition-all duration-200 ease-in-out font-semibold",
-            buttonVariants["filled"],
-          )}
-        >
+        <Button component="a" link="#">
           GET STARTED
-        </a>
+        </Button>
       </div>
 
       {/* Small Screen Nav */}
