@@ -10,8 +10,8 @@ export default function CarouselSection() {
         </h2>
         <p className="max-w-sm mt-4">
           Where we elevate your business with innovative strategies anf expert
-          solutions. As a full-service agency, we specialize in helping
-          companies of all sizes optimize their operations.
+          solutions. As a full-service business agency, we specialize in helping
+          companies of all sizes optimize
         </p>
       </section>
 
