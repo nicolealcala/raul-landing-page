@@ -5,6 +5,7 @@ export default function Button({
   disabled = false,
   variant = "filled",
   children,
+  ...props
 }) {
   return (
     <button
@@ -13,6 +14,7 @@ export default function Button({
         buttonVariants[variant] ?? "",
         disabled ? "cursor-auto" : "cursor-pointer",
       )}
+      {...props}
     >
       {children}
     </button>
