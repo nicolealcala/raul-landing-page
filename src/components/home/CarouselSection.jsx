@@ -15,7 +15,11 @@ export default function CarouselSection() {
         </p>
       </section>
 
-      <section className="relative w-full pl-0 lg:pl-[calc((100vw-1280px)/2)]">
+      <section
+        className="relative w-full pl-0 lg:pl-[calc((100vw-1280px)/2)]"
+        role="region"
+        aria-label="Services Carousel"
+      >
         <EmblaCarousel slides={carouselItems} />
       </section>
     </article>
