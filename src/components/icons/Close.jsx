@@ -1,4 +1,4 @@
-export function Close({
+export default function Close({
   size = 24,
   color = "#fd6c2e",
   className = "",
