@@ -1,14 +1,5 @@
-import { lazy } from "react";
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../../components/layout/RootLayout.jsx";
-
-const MaintenancePage = lazy(
-  async () => (await import("../../pages/MaintenancePage.jsx")).default,
-);
-
-const NotFoundPage = lazy(
-  async () => (await import("../../pages/NotFound.jsx")).default,
-);
 
 export const router = createBrowserRouter([
   {
@@ -52,6 +43,9 @@ export const router = createBrowserRouter([
   },
   {
     path: "*",
+    HydrateFallback: () => (
+      <div className="h-screen flex-center">Loading...</div>
+    ),
     lazy: async () => ({
       Component: (await import("../../pages/NotFound.jsx")).default,
     }),

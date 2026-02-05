@@ -10,7 +10,7 @@ export default function MaintenancePage() {
         className="w-[75vw] h-auto max-w-130"
       />
       <h4 className="font-semibold text-2xl text-center">
-        We’re building something new
+        We’re building something new...
       </h4>
       <p className="text-center max-w-md mb-5">
         This page is currently under construction as part of our site update.
