@@ -26,7 +26,7 @@ export default function BackToTop() {
     <IconButton
       aria-label="Scroll to Top"
       variant="filled"
-      className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 lg:bottom-10 lg:right-10 z-80"
+      className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 lg:bottom-10 lg:right-10 z-80 p-3"
       onClick={scrollToTop}
     >
       <ArrowUp color="white" />

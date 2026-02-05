@@ -4,5 +4,5 @@ export const buttonVariants = {
 }
 
 export const buttonShapes = {
-    rounded: "rounded-full p-4"
+    rounded: "rounded-full p-2 sm:p-4"
 }
