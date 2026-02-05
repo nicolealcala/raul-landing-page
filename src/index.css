@@ -45,6 +45,7 @@
   margin: 0 !important;
   margin-inline: auto !important;
   max-width: 100% !important;
+  min-height: 100dvh;
 }
 
 body {
