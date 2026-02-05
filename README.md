@@ -58,6 +58,7 @@ Follow these steps to run the project on your local machine:
 ## Resources Used
 
 - Framework: [React](https://react.dev/) + [Vite](https://vite.dev/)
+- Routing [React Router](https://reactrouter.com/)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
 - Typography: [Poppins (Google Fonts)](https://fonts.google.com/specimen/Poppins)
 - Color Palette: [Eye Dropper](https://www.eyedropper.org/) + [Tailwind CSS Color Generator](https://uicolors.app/generate/dd03fa)
@@ -66,6 +67,8 @@ Follow these steps to run the project on your local machine:
 - Icon SVGs: [SVG Repo](https://www.svgrepo.com/)
 - Favicon: [Figma](https://www.figma.com/) + [Real Favicon Generator](https://realfavicongenerator.net/)
 - Hero Image: [Photo by Yan Krukau](https://www.pexels.com/photo/four-people-working-in-the-office-7691725/)
+- Testing Tool: [Browserling](https://www.browserling.com/)
+- Deployment: [Vercel](https://vercel.com/)
 
 <br>
 
@@ -80,16 +83,17 @@ Since a source design file (Figma) wasn't available, I made the following decisi
 3. **Branding Colors:** Primary brand colors were extracted directly from the provided mockup. to ensure UI consistency, I generated a color palette based on these primary tones.
 4. **Assets:**
    - **Logo:** Since source files were't available, I manually traced and recreated the logo as a vector (SVG). I also generated a full set of professional favicons for polished browser experience.
-   - **Icons:** I curated custom icons from SVG Repo to match the mockup's, converting them into React components for reusability and customization.
+   - **Icons:** I curated custom icons from SVG Repo to match the mockup's, converted them into React components for reusability and customization.
    - **Image:** I selected a high-definition professional photography that aligns wth the agency's brand identity and color scheme, then converted it to **.webp** for optimization.
 
 <br>
 
 **Time Spent**
 
-- **Total Time:** ~16 hours
+- **Total Time:** ~20 hours
   - Planning: 2 hours
   - Project Setup: 1 hour
-  - Asset Curation and Recreation: 2 hours
-  - Coding and debugging: 10 hours
+  - Asset Curation and Recreation: 2.5 hours
+  - Coding and debugging: 12 hours
   - Testing and deployment: 1 hour
+  - Documentation: 1 hour
