@@ -41,7 +41,7 @@ Follow these steps to run the project on your local machine:
 **I. Installation**
 
 1. **Download and unzip** the project folder.
-2. Open your terminal and navigate to the project folder: `cd path/to/raul-landing-page`
+2. Open your terminal and navigate to the project folder: `cd <path/to>/raul-landing-page`
 3. **Install the dependencies:** Type the following and press Enter: `npm install`
 4. **Start the project:** Type the following and press Enter: `npm run dev`
 5. **View it:** Open your browser and go to the URL shown in the terminal (usually http://localhost:5173).
@@ -58,7 +58,7 @@ Follow these steps to run the project on your local machine:
 ## Resources Used
 
 - Framework: [React](https://react.dev/) + [Vite](https://vite.dev/)
-- Routing [React Router](https://reactrouter.com/)
+- Routing: [React Router](https://reactrouter.com/)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
 - Typography: [Poppins (Google Fonts)](https://fonts.google.com/specimen/Poppins)
 - Color Palette: [Eye Dropper](https://www.eyedropper.org/) + [Tailwind CSS Color Generator](https://uicolors.app/generate/dd03fa)
@@ -67,8 +67,8 @@ Follow these steps to run the project on your local machine:
 - Icon SVGs: [SVG Repo](https://www.svgrepo.com/)
 - Favicon: [Figma](https://www.figma.com/) + [Real Favicon Generator](https://realfavicongenerator.net/)
 - Hero Image: [Photo by Yan Krukau](https://www.pexels.com/photo/four-people-working-in-the-office-7691725/)
-- Testing Tool: [Browserling](https://www.browserling.com/)
-- Deployment: [Vercel](https://vercel.com/)
+- Browser Compatibility Testing Tool: [Browserling](https://www.browserling.com/)
+- Deployment and Hosting: [Vercel](https://vercel.com/)
 
 <br>
 
@@ -80,11 +80,11 @@ Since a source design file (Figma) wasn't available, I made the following decisi
 
 1. **Visual Fidelity and Spacing:** I ensured the layout stays true to the original design by carefully calibrating all gaps and margins to match the mockup's proportions.
 2. **Mobile Responsiveness:** Since a mobile version was not provided, I designed a custom responsive layout to ensure a seamless and user-friendly experience on smaller screens.
-3. **Branding Colors:** Primary brand colors were extracted directly from the provided mockup. to ensure UI consistency, I generated a color palette based on these primary tones.
+3. **Branding Colors:** Primary brand colors were extracted directly from the provided mockup. to ensure UI consistency, I generated a color palette based on the primary tones.
 4. **Assets:**
-   - **Logo:** Since source files were't available, I manually traced and recreated the logo as a vector (SVG). I also generated a full set of professional favicons for polished browser experience.
+   - **Logo:** Since source files weren't available, I manually traced and recreated the logo as a vector (SVG). I also generated a full set of professional favicons for polished browser experience.
    - **Icons:** I curated custom icons from SVG Repo to match the mockup's, converted them into React components for reusability and customization.
-   - **Image:** I selected a high-definition professional photography that aligns wth the agency's brand identity and color scheme, then converted it to **.webp** for optimization.
+   - **Image:** I selected a high-definition professional photography that aligns wth the agency's brand identity and color scheme, then converted it to **.webp** format for optimization.
 
 <br>
 
@@ -102,7 +102,7 @@ Since a source design file (Figma) wasn't available, I made the following decisi
 
 ## Future Improvements
 
-Due to this project's timeline, I prioritized delivering a high-fidelity, polished UI. Moving forward, the following enhancements would be the priority:
+Due to the project's timeline, I prioritized delivering a high-fidelity, polished UI. Moving forward, the following enhancements would be the priority:
 
 - **Type-safety:** For a production-ready scale, I would migrate the project to **TypeScript** to provide robust type-checking and long-term maintainablity.
 - **Server-side Rendering (SSR):** Migrating to a framework like **Next.js** to impelement Server-side Rendering and/or Static Site Generation (SSG) for improved SEO.
