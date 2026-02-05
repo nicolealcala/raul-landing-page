@@ -18,25 +18,25 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         lazy: async () => ({
-          Component: (await import("../../pages/About.jsx")).default,
+          Component: (await import("../../pages/MaintenancePage.jsx")).default,
         }),
       },
       {
         path: "/services",
         lazy: async () => ({
-          Component: (await import("../../pages/Home.jsx")).default,
+          Component: (await import("../../pages/MaintenancePage.jsx")).default,
         }),
       },
       {
         path: "/page",
         lazy: async () => ({
-          Component: (await import("../../pages/Home.jsx")).default,
+          Component: (await import("../../pages/MaintenancePage.jsx")).default,
         }),
       },
       {
         path: "/support",
         lazy: async () => ({
-          Component: (await import("../../pages/Home.jsx")).default,
+          Component: (await import("../../pages/MaintenancePage.jsx")).default,
         }),
       },
     ],
