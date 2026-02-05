@@ -97,3 +97,15 @@ Since a source design file (Figma) wasn't available, I made the following decisi
   - Coding and debugging: 12 hours
   - Testing and deployment: 1 hour
   - Documentation: 1 hour
+
+<br>
+
+## Future Improvements
+
+Due to this project's timeline, I prioritized delivering a high-fidelity, polished UI. Moving forward, the following enhancements would be the priority:
+
+- **Type-safety:** For a production-ready scale, I would migrate the project to **TypeScript** to provide robust type-checking and long-term maintainablity.
+- **Server-side Rendering (SSR):** Migrating to a framework like **Next.js** to impelement Server-side Rendering and/or Static Site Generation (SSG) for improved SEO.
+- **Custom Animations:** Adding smooth transition between sections using libraries like **motion.dev**.
+- **Form Integration:** Adding a functional form to easily connect with prospect clients.
+- **Loading UI:** A better loading UI indicator aligned with the branding.
