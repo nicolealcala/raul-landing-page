@@ -64,7 +64,7 @@ export default function HeroSection() {
               <div className="flex lg:hidden -mt-20">
                 <Card
                   header={
-                    <div className="flex gap-x-8">
+                    <div className="flex gap-x-4">
                       <MetricsText amount={721} />
                       <MetricsText amount={1000} />
                     </div>
@@ -77,15 +77,15 @@ export default function HeroSection() {
             </div>
 
             {/* Metrics */}
-            <div className="flex md:hidden lg:flex w-full flex-col gap-10 items-center sm:flex-row md:items-start md:gap-10">
+            <div className="flex md:hidden lg:flex w-full flex-col gap-10 items-center sm:flex-row justify-center md:gap-10">
               <Metrics
                 amount={2000}
-                icon={<LayoutIcon className="size-full" />}
+                icon={<LayoutIcon className="size-16" />}
                 description="Your protection"
               />
               <Metrics
                 amount={7001}
-                icon={<ThreeDots className="size-full" />}
+                icon={<ThreeDots className="size-16" />}
                 description="Provide tailored"
               />
             </div>
@@ -94,7 +94,7 @@ export default function HeroSection() {
           <div className="hidden lg:flex mt-4 w-max shrink-0">
             <Card
               header={
-                <div className="flex gap-x-8">
+                <div className="flex gap-x-4">
                   <MetricsText amount={721} />
                   <MetricsText amount={1000} />
                 </div>

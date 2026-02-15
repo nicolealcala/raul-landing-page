@@ -4,7 +4,10 @@ import CountUp from "react-countup";
 export default function MetricsText({ amount, className }) {
   return (
     <CountUp
-      className={cn("text-primary-400 font-semibold text-4xl", className ?? "")}
+      className={cn(
+        "text-primary-400 font-semibold text-4xl min-w-28",
+        className ?? "",
+      )}
       end={amount}
       duration={1}
       enableScrollSpy
