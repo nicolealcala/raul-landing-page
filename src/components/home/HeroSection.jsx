@@ -77,7 +77,7 @@ export default function HeroSection() {
             </div>
 
             {/* Metrics */}
-            <div className="flex md:hidden lg:flex w-full flex-col gap-10 items-center sm:flex-row md:items-start md:gap-10">
+            <div className="flex md:hidden lg:flex w-full flex-col gap-10 items-center sm:flex-row justify-center md:gap-10">
               <Metrics
                 amount={2000}
                 icon={<LayoutIcon className="size-full" />}
