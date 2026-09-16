@@ -4,7 +4,7 @@ import EmblaCarousel from "../ui/EmblaCarousel";
 export default function CarouselSection() {
   return (
     <article className="flex flex-col gap-y-20">
-      <section className="flex flex-col gap-6 lg:flex-row justify-between w-full max-w-7xl mx-auto">
+      <section className="flex flex-col gap-6 lg:flex-row justify-between w-full">
         <h2 className="text-[clamp(2.3rem,5vw,3.75rem)] font-semibold leading-[1.1] tracking-tighter text-center lg:text-left">
           Build the future of your business today.
         </h2>
@@ -16,7 +16,7 @@ export default function CarouselSection() {
       </section>
 
       <section
-        className="relative w-full pl-0 lg:pl-[calc((100vw-1280px)/2)]"
+        className="relative w-full pl-1"
         role="region"
         aria-label="Services Carousel"
       >

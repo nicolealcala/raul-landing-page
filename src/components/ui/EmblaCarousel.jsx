@@ -69,7 +69,6 @@ export default function EmblaCarousel({ slides }) {
                 "w-full",
                 // "-my-7 py-7",
                 // "-ml-7 pl-7",
-                "-mr-6 lg:mr-[calc((100vw-1280px)/2+2.5rem)]",
               )}
               aria-live="polite"
             >
@@ -79,7 +78,7 @@ export default function EmblaCarousel({ slides }) {
                   aria-label={`${index + 1} of ${slides.length}`}
                   className={cn(
                     "embla__slide",
-                    "flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_30%] xl:flex-[0_0_25%] pr-4",
+                    "flex-[0_0_90%] sm:flex-[0_0_50%] lg:flex-[0_0_30%] xl:flex-[0_0_25%] pr-4",
                   )}
                 >
                   <CarouselCard
@@ -92,8 +91,8 @@ export default function EmblaCarousel({ slides }) {
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full px-0 sm:px-4 lg:px-8 flex justify-between">
-        {canScrollPrev ? (
+      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[calc(100%+2rem)] lg:w-[calc(100%+6rem)] flex justify-between">
+        {canScrollPrev && (
           <IconButton
             aria-label="Previous slide"
             className="embla__prev"
@@ -101,13 +100,11 @@ export default function EmblaCarousel({ slides }) {
           >
             <ArrowLeft className="size-6 lg:size-20" />
           </IconButton>
-        ) : (
-          <div></div>
         )}
         {canScrollNext ? (
           <IconButton
             aria-label="Next slide"
-            className="embla__next"
+            className={`embla__next ${canScrollNext ? "ml-auto" : ""}`}
             onClick={goToNext}
           >
             <ArrowRight className="size-6 lg:size-20" />
