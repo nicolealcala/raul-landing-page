@@ -4,11 +4,13 @@ import UnderConstructionSvg from "/under-construction.svg";
 export default function MaintenancePage() {
   return (
     <div className="max-w-7xl mx-auto flex-center flex-col gap-y-4 -mt-10">
-      <img
-        src={UnderConstructionSvg}
-        alt="Website Under Construction SVG"
-        className="w-[75vw] h-auto max-w-130"
-      />
+      <div className="w-130 h-80 mb-6">
+        <img
+          src={UnderConstructionSvg}
+          alt="Website Under Construction SVG"
+          className="w-[75vw] h-auto max-w-130"
+        />
+      </div>
       <h4 className="font-semibold text-2xl text-center">
         We’re building something new...
       </h4>

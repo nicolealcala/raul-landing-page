@@ -6,7 +6,7 @@ import BackToTop from "../ui/BackToTop";
 
 export default function RootLayout() {
   return (
-    <div className="relative max-w-screen flex flex-col py-6 px-4 md:py-9 md:px-6 text-left">
+    <div className="relative flex flex-col py-6 px-4 md:py-9 md:px-6 text-left  max-w-7xl mx-auto">
       <Navbar />
       <main id="main-content" className="min-h-dvh flex-1 flex-center py-24 ">
         <Suspense

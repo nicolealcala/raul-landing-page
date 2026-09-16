@@ -8,7 +8,7 @@ import HeroImgWebp from "/hero-img.webp";
 
 export default function HeroSection() {
   return (
-    <article className="relative flex gap-x-8 w-full max-w-7xl mx-auto">
+    <article className="relative flex gap-x-8 w-full">
       <div className="w-full flex flex-col gap-y-8 lg:gap-y-20 z-10">
         <header>
           <h1 className="text-[clamp(2.75rem,7.75vw,5.25rem)] font-semibold leading-[1.1] tracking-tighter text-center lg:text-left">
