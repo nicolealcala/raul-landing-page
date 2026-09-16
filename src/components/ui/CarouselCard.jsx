@@ -5,7 +5,7 @@ export default function CarouselCard({ title, description }) {
   return (
     <div
       className={cn(
-        "rounded-2xl flex flex-col gap-y-6 px-8 md:px-12 py-7 pb-12 bg-white h-full  shadow-[0px_0px_20px_2px_rgba(0,0,0,0.08)]",
+        "rounded-2xl flex flex-col gap-y-6 px-8 md:px-9 py-7 pb-12 bg-white h-full shadow-[0px_0px_20px_2px_rgba(0,0,0,0.08)]",
         //"max-w-70 sm:max-w-80",
       )}
     >

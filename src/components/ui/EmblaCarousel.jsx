@@ -57,8 +57,8 @@ export default function EmblaCarousel({ slides }) {
               "embla__viewport",
               "overflow-hidden",
               "-my-7 py-7",
-              "-ml-7 pl-7",
-              "-mr-3 lg:mr-7",
+              "-mx-3 px-3",
+              "-mr-7 lg:mr-3",
             )}
             ref={emblaRef}
           >
@@ -67,8 +67,6 @@ export default function EmblaCarousel({ slides }) {
                 "embla__container",
                 "flex touch-pan-y touch-pinch-zoom",
                 "w-full",
-                // "-my-7 py-7",
-                // "-ml-7 pl-7",
               )}
               aria-live="polite"
             >
@@ -78,7 +76,7 @@ export default function EmblaCarousel({ slides }) {
                   aria-label={`${index + 1} of ${slides.length}`}
                   className={cn(
                     "embla__slide",
-                    "flex-[0_0_90%] sm:flex-[0_0_50%] lg:flex-[0_0_30%] xl:flex-[0_0_25%] pr-4",
+                    "flex-[0_0_90%] sm:flex-[0_0_50%] lg:flex-[0_0_30%] xl:flex-[0_0_25%] pr-5",
                   )}
                 >
                   <CarouselCard
