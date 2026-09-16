@@ -3,7 +3,7 @@ import CarouselSection from "../components/home/CarouselSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-y-40 w-full">
+    <div className="flex flex-col gap-y-44 w-full">
       <HeroSection />
       <CarouselSection />
     </div>
